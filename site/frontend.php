@@ -29,6 +29,15 @@ $presenter = new $al_presenter(new $al_model(), new $al_view());
 $content_html =  $presenter->get_view()->get_content_html();
 $page = file_get_contents("template/template_teste.html");
 $page = str_replace("#content#", $content_html, $page);
+
+$data = json_decode(file_get_contents("template/data/data_site.json"));
+$page = str_replace("#endereco#", $data->contatos->endereco, $page);
+$page = str_replace("#email#", $data->contatos->email, $page);
+$page = str_replace("#telefone#", $data->contatos->telefone, $page);
+$page = str_replace("#facebook-link#", $data->contatos->facebooklink, $page);
+$page = str_replace("#instagram-link#", $data->contatos->instagramlink, $page);
+$page = str_replace("#github-link#", $data->contatos->githublink, $page);
+$page = str_replace("#copyright#", $data->copyright, $page);
 echo $page;
 #var_dump($_SERVER);
 ?>
