@@ -10,7 +10,9 @@ require_once "common/ModelAbstract.php";
 $page = str_replace("/sitepequi/site/","",$_SERVER['REDIRECT_URL']);
 
 $alias_page = ucfirst(strtolower($page));
-if(!file_exists("presenter/".$alias_page."Presenter.php")) {
+if($alias_page == "Index.html") {
+  $alias_page = "Home";
+} elseif(!file_exists("presenter/".$alias_page."Presenter.php")) {
     $alias_page = "Error404";
 }
 require_once "model/".$alias_page."Model.php";

@@ -1,11 +1,11 @@
 {
   "contatos" : {
-    "endereco" : "NEPE 1 - PMEC",
+    "endereco" : "NEPE 1/PMEC - EMC, campus Colemar Costa e Silva, UFG.",
     "email" : "contato@pequimecanico.com",
     "telefone" : "(62) 999 999 999",
     "facebooklink" : "https://www.facebook.com/NucleoPMec/",
     "instagramlink" : "https://www.instagram.com/pequimecanico/",
     "githublink" : ""
     },
-  "copyright" : "© Núcleo de Robótica Pequi Mecânico"
+  "copyright" : "2017 © Núcleo de Robótica Pequi Mecânico"
 }
