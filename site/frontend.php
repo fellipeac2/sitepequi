@@ -6,9 +6,10 @@
  * Time: 18:48
  */
 
-//require_once "common/ModelAbstract.php";
+require_once "common/ModelAbstract.php";
+$page = str_replace("/pequi/site/","",$_SERVER['REDIRECT_URL']);
 
-$alias_page = ucfirst(strtolower($_GET["page"]));
+$alias_page = ucfirst(strtolower($page));
 require_once "model/".$alias_page."Model.php";
 require_once "presenter/".$alias_page."Presenter.php";
 require_once "view/".$alias_page."View.php";
@@ -25,5 +26,5 @@ $content_html =  $presenter->get_view()->get_content_html();
 $page = file_get_contents("template/template_teste.html");
 $page = str_replace("#content#", $content_html, $page);
 echo $page;
-
+#var_dump($_SERVER);
 ?>

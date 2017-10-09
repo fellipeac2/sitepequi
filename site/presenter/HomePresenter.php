@@ -16,6 +16,7 @@ class HomePresenter extends PresenterAbstract
 {
     public function init()
     {
-        $this->view->fill_content_html();
+        $data = $this->model->get_data();
+        $this->view->fill_content_html($data);
     }
 }

@@ -15,8 +15,10 @@ use pequi\site\common\ViewAbstract;
 class HomeView extends ViewAbstract
 {
 
-    public function fill_content_html() {
+    public function fill_content_html($data) {
         $this->push_tmpl_name("contents/homepage.html");
+        $this->set_content_html(str_replace("#artigos#", $data->pesquisa->artigos, $this->get_content_html()));
+        $this->set_content_html(str_replace("#referencias#", $data->pesquisa->referencias, $this->get_content_html()));
     }
 
 }
