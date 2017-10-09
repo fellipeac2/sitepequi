@@ -5,7 +5,7 @@
  * Date: 21/08/17
  * Time: 19:16
  */
-namespace pequi\site\common;
+namespace sitepequi\site\common;
 //require_once "ModelAbstract.php";
 
 abstract class ViewAbstract

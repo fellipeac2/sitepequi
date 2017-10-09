@@ -6,10 +6,10 @@
  * Time: 18:42
  */
 
-namespace pequi\site\model;
+namespace sitepequi\site\model;
 
 
-use pequi\site\common\ModelAbstract;
+use sitepequi\site\common\ModelAbstract;
 
 class HomeModel extends ModelAbstract
 {

@@ -6,12 +6,12 @@
  * Time: 13:36
  */
 
-namespace pequi\site\view;
+namespace sitepequi\site\view;
 
 require_once "common/ViewAbstract.php";
 
 
-use pequi\site\common\ViewAbstract;
+use sitepequi\site\common\ViewAbstract;
 
 class AboutView extends ViewAbstract
 {

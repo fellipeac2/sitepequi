@@ -6,7 +6,7 @@
  * Time: 19:20
  */
 
-namespace pequi\site\common;
+namespace sitepequi\site\common;
 
 require_once "ModelAbstract.php";
 require_once "ViewAbstract.php";

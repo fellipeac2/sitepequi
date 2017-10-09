@@ -5,12 +5,12 @@
  * Date: 18/09/17
  * Time: 18:45
  */
-namespace pequi\site\presenter;
+namespace sitepequi\site\presenter;
 
 require_once "common/PresenterAbstract.php";
 
-use pequi\site\common\PresenterAbstract;
-use pequi\site\view\HomeView;
+use sitepequi\site\common\PresenterAbstract;
+use sitepequi\site\view\HomeView;
 
 class HomePresenter extends PresenterAbstract
 {

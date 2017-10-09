@@ -7,16 +7,16 @@
  */
 
 require_once "common/ModelAbstract.php";
-$page = str_replace("/pequi/site/","",$_SERVER['REDIRECT_URL']);
+$page = str_replace("/sitepequi/site/","",$_SERVER['REDIRECT_URL']);
 
 $alias_page = ucfirst(strtolower($page));
 require_once "model/".$alias_page."Model.php";
 require_once "presenter/".$alias_page."Presenter.php";
 require_once "view/".$alias_page."View.php";
 
-$ns_model = "\pequi\site\model\\";
-$ns_view  = "\pequi\site\\view\\";
-$ns_presenter = "\pequi\site\presenter\\";
+$ns_model = "\sitepequi\site\model\\";
+$ns_view  = "\sitepequi\site\\view\\";
+$ns_presenter = "\sitepequi\site\presenter\\";
 $al_model = $ns_model.$alias_page."Model";
 $al_view  = $ns_view.$alias_page."View";
 $al_presenter = $ns_presenter.$alias_page."Presenter";

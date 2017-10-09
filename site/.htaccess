@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /sitepequi/site/
+RewriteRule .(/)?$ frontend.php

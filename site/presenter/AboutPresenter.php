@@ -6,11 +6,11 @@
  * Time: 13:37
  */
 
-namespace pequi\site\presenter;
+namespace sitepequi\site\presenter;
 
 require_once "common/PresenterAbstract.php";
 
-use pequi\site\common\PresenterAbstract;
+use sitepequi\site\common\PresenterAbstract;
 
 class AboutPresenter extends PresenterAbstract
 {
