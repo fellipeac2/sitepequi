@@ -10,9 +10,13 @@ require_once "common/ModelAbstract.php";
 $page = str_replace("/sitepequi/site/","",$_SERVER['REDIRECT_URL']);
 
 $alias_page = ucfirst(strtolower($page));
+if(!file_exists("presenter/".$alias_page."Presenter.php")) {
+    $alias_page = "Error404";
+}
 require_once "model/".$alias_page."Model.php";
 require_once "presenter/".$alias_page."Presenter.php";
 require_once "view/".$alias_page."View.php";
+
 
 $ns_model = "\sitepequi\site\model\\";
 $ns_view  = "\sitepequi\site\\view\\";
