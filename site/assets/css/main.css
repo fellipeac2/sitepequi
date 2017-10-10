@@ -3109,7 +3109,9 @@
 		padding: 2em 5em 1em 5em ;
 		text-align: center;
 	}
-
+		#header a {
+			outline:none;
+		}
 		#header h1 {
 			margin: 0 0 0.25em 0;
 			font-family: clockwork;
@@ -3326,6 +3328,7 @@
 					border: 0;
 					border-radius: 8px;
 					box-shadow: inset 0 0 0 1px transparent;
+					outline:none;
 				}
 
 					#nav ul li a:hover {
